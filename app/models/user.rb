@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
                         length: { minimum: 5 },
                         confirmation: true
 
+  has_many :comments
+
   def add_salt_and_hash
     unless password.blank?
       self.password_salt = BCrypt::Engine.generate_salt
