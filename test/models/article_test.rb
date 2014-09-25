@@ -3,12 +3,12 @@ class ArticleTest < ActiveSupport::TestCase
   #--------------Start Test Relation--------------
   test "Get all comment for first article" do
     article = Article.first
-    assert article.comments, true
+    assert article.comments
   end
 
   test "Get article from first comment" do
     comment = Comment.first
-    assert comment.article, true
+    assert comment.article
   end
 
 
@@ -84,6 +84,6 @@ class ArticleTest < ActiveSupport::TestCase
 
   #--------------Test custom Scope-----------------
   test "check scope, data exist if status active" do
-    assert Article.status_active, true
+    assert Article.status_active
   end
 end
