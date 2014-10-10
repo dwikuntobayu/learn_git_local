@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     if @user.save
       begin
         #HeroMailer.htm_mail("#{@user.email}", @user.activation_token).deliver
-        ConfirmationMailer.confirm_email("#{@user.email}", @user.activation_token).deliver
+        ConfirmationMailer.confirm_email("#{@user.email}", request.host, @user.activation_token).deliver
       rescue
         flash[:notice] = "activation instruction fails send to your email"
       end

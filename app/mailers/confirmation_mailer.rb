@@ -15,8 +15,9 @@ ActionMailer::Base.smtp_settings = {
 
 
 class ConfirmationMailer < ActionMailer::Base
-  def confirm_email(target_email, activation_token)
+  def confirm_email(target_email, url_host, activation_token)
     @activation_token = activation_token
+    @url_host = url_host
     mail(:to => target_email,
       :from => "develror@gmail.com",
       :subject => "[Training - Rails 4]") do |format|
