@@ -3,15 +3,14 @@ require "action_mailer"
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
-  :port                 => 587,
+  :port                 => 465,
   :domain               => '@gmail.com',
   :user_name            => 'develror',
   :password             => '12345^&*()',
   :authentication       => "plain",
-  # :ssl                  => true,
-  # :tls                  => true,
-  :enable_starttls_auto => true,
-  :openssl_verify_mode => 'none' 
+  :ssl                  => true,
+  :tls                  => true,
+  :enable_starttls_auto => true
 }
 
 
