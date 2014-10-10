@@ -21,3 +21,4 @@ log/*.log
 .ruby-gemset
 .ruby-version
 db/schema.rb
+.env
