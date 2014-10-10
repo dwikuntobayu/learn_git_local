@@ -1,4 +1,0 @@
-Learn git
-in local repository
-
-modify text
