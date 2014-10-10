@@ -1,6 +1,7 @@
 require "action_mailer"
 
 ActionMailer::Base.delivery_method = :smtp
+ActionMailer::Base.default_url_options = { :host => "learn-rails4-staging.herokuapp.com" }
 ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 465,
