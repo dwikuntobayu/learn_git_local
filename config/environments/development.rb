@@ -36,17 +36,17 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   #configuration mailer smtp
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    :address              => "smtp.gmail.com",
-    :port                 => 465,
-    :domain               => "gmail.com",
-    :user_name            => "develror",
-    :password             => "12345^&*()",
-    :authentication       => "login",
-    :ssl                  => true,
-    :tls                  => true,
-    :enable_starttls_auto => true
-  }
+  # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   :address              => "smtp.gmail.com",
+  #   :port                 => 465,
+  #   :domain               => "gmail.com",
+  #   :user_name            => "develror",
+  #   :password             => "12345^&*()",
+  #   :authentication       => "login",
+  #   :ssl                  => true,
+  #   :tls                  => true,
+  #   :enable_starttls_auto => true
+  # }
 end
