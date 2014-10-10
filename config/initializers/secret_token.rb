@@ -1,1 +1,1 @@
-MyApp::Application.config.secret_token = ENV[SECRET_TOKEN]
+TestDummy2::Application.config.secret_token = ENV[SECRET_TOKEN]
